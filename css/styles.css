@@ -1,0 +1,296 @@
+:root {
+/*Font*/
+--font-family: 'Roboto', sans-serif;
+--title-font: 'Raleway', sans-serif;
+
+
+/*Text Color*/
+--inter-iris-cl: #4D5AE5;
+--pressed-ocean-cl: #404BBF;
+--shadows-navyblue-cl: #2E2F42;
+--success-green-100-cl: rgb(49, 208, 170);
+--success-green-75-cl: rgba(49, 208, 170, 0,75);
+--success-green-50-cl: rgba(49, 208, 170, 0,5);
+--success-green-10-cl: rgba(49, 208, 170, 0,1);
+--body-txt-cl: #434455;
+--helper-txt-cl: #8E8F99;
+--accent-cl: #E7E9FC;
+--mode-dialogs-cl: #F4F4FD;
+--overlay-40-cl: rgba(46, 47, 66, 0,4);
+--white-cl:#ffffff;
+
+
+/* Background color */
+--hero-gray-70-bg: rgba(46, 47, 66, 0,7);
+--mode-dialogs-bg: #F4F4FD;
+--accent-bg: #E7E9FC;
+--white-bg: #ffffff;
+
+
+
+/* Othere */
+
+}
+
+/*Base Styles*/
+.page {
+    font-family: var(--font-family);
+    color: var(--body-txt-cl);
+    background-color: var(--white-bg);
+    font-size: 16px;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul{list-style: none;}
+    /*logo*/
+    .logo{
+        font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--text-navyblue)}
+
+.logo .accent{color:var(--inter-iris-cl)}
+    
+.section-title{
+font-size: 36px;
+line-height: 1.11;
+/* identical to box height, or 111% */
+
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--shadows-navyblue-cl)}
+
+.section-text{
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--body-txt-cl)}
+
+.section-subtitle{
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--text-navyblue)}
+
+
+/*Site nav*/
+.site-nav .link{ 
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--shadows-navyblue-cl);}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--pressed-ocean-cl);}
+
+/*Contacts*/
+.contact-link{
+font-style: normal;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--body-txt-cl);}
+
+.contact-link:hover,
+.contact-link:focus{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--pressed-ocean-cl);}
+
+.number-link{
+font-style: normal;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--body-txt-cl);}
+.number-link:hover,
+.number-link:focus{font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--pressed-ocean-cl)}
+
+
+/*Hero*/
+.hero{
+background-color: var(--shadows-navyblue-cl);}
+.hero-title{
+font-size: 56px;
+line-height: 1.07;
+/* or 107% */
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--white-cl);}
+
+.btn{ /* Button Text */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 1.5;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+        background: var(--inter-iris-cl);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px }
+.btn:hover,
+.btn:focus{background: var(--pressed-ocean-cl);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;}
+
+/*our-team*/
+
+.team-list{
+    background: var(--light-bg-cl);}
+.person{
+    background-color: var(--white-bg-cl);
+    width: 264px;
+    height: 428px;}
+
+
+/*portfolio*/
+.btn-portfolio{
+    align-items: center;
+        text-align: center;
+        display: flex;}
+
+.button-filter-all {
+        color: var(--inter-iris-cl);
+        background-color: var(--mode-dialogs-cl);
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 500;
+        height: 48px;
+        width: 69px;
+        left: 0px;
+        top: 0px;
+        cursor: pointer;
+        font-family: inherit;
+        letter-spacing: 0.04em;
+            }
+.button-filter-all:hover,
+.button-filter-all:focus{
+    color: var(--white-bg);
+    background-color: var(--pressed-ocean-cl);}
+
+
+        
+.button-filter-web {
+    color: var(--inter-iris-cl);
+        background-color: var(--mode-dialogs-cl);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    height: 48px;
+    width: 116px;
+    left: 93px;
+    top: 0px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;
+    }
+.button-filter-web:hover,
+.button-filter-web:focus{
+    color: var(--white-bg);
+    background-color: var(--pressed-ocean-cl);}
+.button-filter-app {
+    color: var(--inter-iris-cl);
+    background-color: var(--mode-dialogs-cl);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    height: 48px;
+    width: 78px;
+    left: 93px;
+    top: 0px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;
+    }
+.button-filter-app:hover,
+.button-filter-app:focus {
+    color: var(--white-bg);
+    background-color: var(--pressed-ocean-cl);}
+
+.button-filter-design {
+    color: var(--inter-iris-cl);
+    background-color: var(--mode-dialogs-cl);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    height: 48px;
+    width: 101px;
+    left: 93px;
+    top: 0px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;
+}
+.button-filter-design:hover,
+.button-filter-design:focus {
+    color: var(--white-bg);
+    background-color: var(--pressed-ocean-cl);}
+
+.button-filter-marketing {
+    color: var(--inter-iris-cl);
+    background-color: var(--mode-dialogs-cl);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    height: 48px;
+    width: 126px;
+    left: 93px;
+    top: 0px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;}
+.button-filter-marketing:hover,
+.button-filter-marketing:focus {
+    color: var(--white-bg);
+    background-color: var(--pressed-ocean-cl);}
+
+.footer{
+    background-color: var(--body-txt-cl);
+}
+.logo-footer{font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--mode-dialogs-cl)}
+.logo-footer .accent{color: var(--inter-iris-cl);}
+
+.text-footer {
+font-weight: 1.5;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: var(--accent-cl);
+}
+
