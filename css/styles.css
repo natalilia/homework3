@@ -30,7 +30,7 @@
 
 /* Othere */
 --border-radius: 4px;
---indent: 30px;
+--indent: 24px;
 
 
 }
@@ -221,8 +221,7 @@ color: var(--pressed-ocean-cl)}
 background-color: var(--shadows-navyblue-cl);
 padding-top: 188px;
 padding-bottom: 188px;
-text-align: center;
-margin: 120px;}
+text-align: center;}
 .hero-title{
     font-weight: 700;
 font-size: 56px;
@@ -304,24 +303,31 @@ margin-bottom: 48px;}
 
 /*portfolio*/
 .btn-portfolio{
-    align-items: center;
-        text-align: center;
-        display: flex;}
+    display: flex;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    letter-spacing: 0.04;
+    cursor: pointer;
+    font-family: var(--font-family);
+    line-height: 1,5;
+    gap: 24px;
+    margin-bottom: 72px;
+        }
+   
 
 .button-filter-all {
         color: var(--inter-iris-cl);
         background-color: var(--mode-dialogs-cl);
         font-size: 16px;
-        line-height: 1.5;
         font-weight: 500;
         height: 48px;
         width: 69px;
-        left: 0px;
-        top: 0px;
-        cursor: pointer;
-        font-family: inherit;
-        letter-spacing: 0.04em;
-            }
+        padding: 12px 24px 12px 24px;
+        border: 1px solid var(--accent-cl);
+            border-radius: var(--border-radius)}
+        
+
+
 .button-filter-all:hover,
 .button-filter-all:focus{
     color: var(--white-bg);
@@ -331,17 +337,15 @@ margin-bottom: 48px;}
         
 .button-filter-web {
     color: var(--inter-iris-cl);
-        background-color: var(--mode-dialogs-cl);
+    background-color: var(--mode-dialogs-cl);
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
     height: 48px;
     width: 116px;
-    left: 93px;
-    top: 0px;
-    cursor: pointer;
-    font-family: inherit;
-    letter-spacing: 0.04em;
+    padding: 12px 24px 12px 24px;
+    border: 1px solid var(--accent-cl);
+    border-radius: var(--border-radius);
     }
 .button-filter-web:hover,
 .button-filter-web:focus{
@@ -355,11 +359,9 @@ margin-bottom: 48px;}
     font-weight: 500;
     height: 48px;
     width: 78px;
-    left: 93px;
-    top: 0px;
-    cursor: pointer;
-    font-family: inherit;
-    letter-spacing: 0.04em;
+    padding: 12px 24px 12px 24px;
+    border: 1px solid var(--accent-cl);
+    border-radius: var(--border-radius);
     }
 .button-filter-app:hover,
 .button-filter-app:focus {
@@ -374,11 +376,9 @@ margin-bottom: 48px;}
     font-weight: 500;
     height: 48px;
     width: 101px;
-    left: 93px;
-    top: 0px;
-    cursor: pointer;
-    font-family: inherit;
-    letter-spacing: 0.04em;
+    padding: 12px 24px 12px 24px;
+    border: 1px solid var(--accent-cl);
+    border-radius: var(--border-radius);
 }
 .button-filter-design:hover,
 .button-filter-design:focus {
@@ -393,36 +393,54 @@ margin-bottom: 48px;}
     font-weight: 500;
     height: 48px;
     width: 126px;
-    left: 93px;
-    top: 0px;
-    cursor: pointer;
-    font-family: inherit;
-    letter-spacing: 0.04em;}
+    padding: 12px 24px 12px 24px;
+    border: 1px solid var(--accent-cl);
+    border-radius: var(--border-radius);}
 .button-filter-marketing:hover,
 .button-filter-marketing:focus {
     color: var(--white-bg);
     background-color: var(--pressed-ocean-cl);}
+    /*example img */
+    .example{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--indent);
+        --items: 9;
+        flex-basis: calc(((100% - var(--indent))* (var(--items) - 1))) / var(--iteams);
+        row-gap: 48px;
+        margin-top:  72px;
+    }
+
+    .example-item{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 16px;
+        border: 1px solid var(--accent-bg);
+        border-top: none;
+    }
 
 .footer{
     background-color: var(--body-txt-cl);
-    
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: var(--accent-cl);
 }
-.logo-footer{font-family: 'Raleway';
-font-style: normal;
-font-weight: 800;
+.text-footer{
+    width: 264px;
+}
+.logo-footer{
+    display: block;
+    width: 115px;
+    margin-bottom: 16px;
+    color: var(--mode-dialogs-cl);
+    text-transform: uppercase;
+font-family: var(--title-font);
 font-size: 18px;
 line-height: 21px;
-display: flex;
-align-items: center;
 letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--mode-dialogs-cl)}
-.logo-footer .accent{color: var(--inter-iris-cl);}
+    font-weight: 800;}
+    .accent{
+        color: var(--inter-iris-cl);
+    }
 
-.text-footer {
-font-weight: 1.5;
-line-height: 24px;
-letter-spacing: 0.02em;
-color: var(--accent-cl);
-}
 
