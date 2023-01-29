@@ -156,8 +156,7 @@ margin-bottom: 8px;
 .header-container{
     display: flex;
     align-items: center;
-    height: 73px;
-    border-bottom: 1px;
+    
 }
 /*Site nav*/
 .site-nav{
@@ -316,7 +315,7 @@ margin-bottom: 48px;}
 
 /*portfolio*/
 .portfolio-section{
-    padding-bottom: 96px;
+    padding-top: 96px;
 }
 .btn-portfolio{
     display: flex;
