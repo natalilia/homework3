@@ -223,6 +223,11 @@ color: var(--pressed-ocean-cl)}
 /*Hero*/
 .hero{
 background-color: var(--shadows-navyblue-cl);
+background: no-repeat;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+rgba(46, 47, 66, 0.7)), url(../imagehero/people-office-hero.jpg);
+background-position: center;
+background-size: cover;
 padding-top: 188px;
 padding-bottom: 188px;
 text-align: center;}
